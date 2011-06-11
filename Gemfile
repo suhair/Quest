@@ -28,4 +28,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # and rake tasks are available in development mode:
 group :production do
    gem 'mysql'
+   gem 'rake', '0.8.7'
 end
