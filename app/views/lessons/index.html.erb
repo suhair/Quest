@@ -17,6 +17,8 @@
     <td><%= lesson.published %></td>
     <td><%= link_to 'Show', course_lesson_path(@course, lesson) %></td>
     <td><%= link_to 'Edit', edit_course_lesson_path(@course, lesson) %></td>
+
+    <td><%= link_to 'Add topic', new_course_lesson_topic_path(@course, lesson) %></td>
     <td><%= link_to 'Destroy', course_lesson_path(@course, lesson), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

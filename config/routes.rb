@@ -1,7 +1,10 @@
 DemoApp::Application.routes.draw do
 
+
   resources :courses do 
-    resources :lessons 
+    resources :lessons do
+      resources :topics
+    end
   end
 
   # The priority is based upon order of creation:

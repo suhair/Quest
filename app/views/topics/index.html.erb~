@@ -1,0 +1,29 @@
+<h1>Listing topics</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th>Published</th>
+    <th>Lesson</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @topics.each do |topic| %>
+  <tr>
+    <td><%= topic.name %></td>
+    <td><%= topic.content %></td>
+    <td><%= topic.published %></td>
+    <td><%= topic.lesson_id %></td>
+    <td><%= link_to 'Show', course_lesson_topic_path(@course, @lesson, topic) %></td>
+    <td><%= link_to 'Edit', edit_course_lesson_topic_path(@course, @lesson, topic) %></td>
+    <td><%= link_to 'Destroy', [@course, @lesson, topic], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Topic', new_topic_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @topic.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @topic.content %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%= @topic.published %>
+</p>
+
+<p>
+  <b>Lesson:</b>
+  <%= @topic.lesson_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_course_lesson_topic_path(@course, @lesson, @topic) %> |
+<%= link_to 'Back', course_lesson_topics_path %>
