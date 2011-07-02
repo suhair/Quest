@@ -7,8 +7,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  
+    <div class="top_strip" style="background-color:black;opacity:0.5;color:#fff;">
+      <div class="row">
+        Here comes the row band
+      </div>
+    </div>
 
-<%= yield %>
+  <div class="container">
+    <div class="row">
+      <%= yield %>
+    </div>
+  </div>
 
 </body>
 </html>

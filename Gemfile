@@ -31,10 +31,13 @@ group :production do
    gem 'mysql'
 end
 
-group :developmeny, :test do
+group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails'
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'win32console'
+  gem 'launchy'
 end
 
 
