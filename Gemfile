@@ -30,3 +30,12 @@ gem 'rake', '0.9.2'
 group :production do
    gem 'mysql'
 end
+
+group :developmeny, :test do
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+end
+
+
+
