@@ -25,7 +25,7 @@ gem 'redcarpet'
 # gem 'aws-s3', :require => 'aws/s3'
 gem 'rake', '0.9.2'
 gem 'devise'
-gem "bcrypt-ruby", :require => "bcrypt"
+gem "bcrypt-ruby", :require => "bcrypt", :platform => "ruby"
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
