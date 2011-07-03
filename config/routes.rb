@@ -1,6 +1,8 @@
 DemoApp::Application.routes.draw do
 
 
+  devise_for :users
+
   resources :courses do 
     resources :lessons do
       resources :topics
