@@ -17,6 +17,11 @@
 
   <div class="container">
     <div class="row">
+      <div id="flash">
+        <% flash.each do |name, message| %>
+          <%= content_tag :div, message, :id => "flash_#{name}" %>
+        <% end %>
+      </div>
       <%= yield %>
     </div>
   </div>
