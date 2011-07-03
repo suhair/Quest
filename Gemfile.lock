@@ -125,7 +125,6 @@ GEM
     tzinfo (0.3.23)
     warden (1.0.4)
       rack (>= 1.0)
-    win32console (1.3.0-x86-mingw32)
     xpath (0.1.4)
       nokogiri (~> 1.3)
 
@@ -145,4 +144,3 @@ DEPENDENCIES
   redcarpet
   rspec-rails
   sqlite3-ruby
-  win32console
